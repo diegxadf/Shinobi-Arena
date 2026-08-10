@@ -1,12 +1,9 @@
-# Texto para la descripción del Pull Request
+# Descripción del Pull Request
 
-> Copiar desde aquí hacia abajo en el campo de descripción del PR en GitHub.
+Este es el texto publicado en la descripción del [Pull Request #1](https://github.com/diegxadf/Shinobi-Arena/pull/1). Se conserva en el repositorio para que la entrega pueda leerse completa sin salir de los archivos.
 
----
-
-**Título del PR:** `PR#1 · U1-S1 · Priorización de Concerns — Shinobi Arena`
-
-**Rama sugerida:** `docs/pr01-priorizacion-concerns`
+**Entrega:** Unidad 1 · Semana 1 · Priorización de Concerns
+**Rama:** `docs/pr01-priorizacion-concerns`
 
 ---
 
