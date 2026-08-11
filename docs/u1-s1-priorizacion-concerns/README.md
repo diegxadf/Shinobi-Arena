@@ -17,7 +17,22 @@ La Semana 1 no pide código ni diagramas todavía: pide **identificar y prioriza
 | [`docs/03-concern-cards.md`](03-concern-cards.md) | 12 Concern Cards con opciones y su impacto en atributos de calidad |
 | [`docs/04-priorizacion.md`](04-priorizacion.md) | Criterio de priorización, tabla de puntajes y ranking en 3 bloques |
 | [`docs/05-decisiones-y-eventos.md`](05-decisiones-y-eventos.md) | Decisión tomada en los 4 concerns del Bloque A + Event Cards del ramo |
-| [`PULL_REQUEST.md`](PULL_REQUEST.md) | Texto listo para pegar en la descripción del PR |
+| [`PULL_REQUEST.md`](PULL_REQUEST.md) | Texto publicado en la descripción del PR |
+| [`DecidArena-Kit-Imprimible.pdf`](DecidArena-Kit-Imprimible.pdf) | **Versión jugable e imprimible** de esta entrega: 12 páginas A4 con cartas recortables, tablero y hojas de registro |
+
+## Versión imprimible
+
+La misma priorización, convertida en un juego de mesa jugable siguiendo el formato del kit
+DecidArch: 3 Stakeholder Cards, 8 Concern Cards, 8 Event Cards, tablero de pistas de calidad
+y hojas de preparación, registro y puntuación.
+
+Los 8 concerns del mazo son los 8 mejor puntuados de los 12 de
+[`04-priorizacion.md`](04-priorizacion.md), en ese mismo orden. Los 9 atributos de calidad se
+condensan en 5 pistas jugables (JUG, FIA, REN, EXT, ALC); cada carta indica qué condensa.
+
+El generador está en [`scripts/decidarena/`](../../scripts/decidarena/) e incluye un
+validador que comprueba que el juego sea ganable, perdible y sin estrategia dominante antes
+de producir el PDF.
 
 ## Resultado en una tabla
 
