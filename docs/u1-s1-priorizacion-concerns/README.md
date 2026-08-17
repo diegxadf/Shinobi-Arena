@@ -28,8 +28,8 @@ El mazo sigue el formato oficial de **DecidArch v1**: 1 Project Card, 3 Stakehol
 de registro y el Scoring Sheet con su fórmula real.
 
 Los 10 concerns son los 10 mejor puntuados de los 12 de [`04-priorizacion.md`](04-priorizacion.md).
-El generador está en [`scripts/decidarch/`](../../scripts/decidarch/) e incluye un validador que
-comprueba, entre otras cosas, que ningún atributo de calidad quede sin un stakeholder interesado.
+El detalle de qué se corrigió respecto de la primera versión está en
+[`06-correcciones.md`](06-correcciones.md).
 
 ## Resultado en una tabla
 

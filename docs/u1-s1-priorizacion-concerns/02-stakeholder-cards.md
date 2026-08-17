@@ -132,8 +132,8 @@ correspondencia con un stakeholder"*.
 | Testability | Equipo de desarrollo · Revisor técnico |
 | Portability | Equipo de desarrollo |
 
-Los nueve están reclamados. La comprobación es automática: `v1_validar.py` falla y no genera el
-PDF si alguna Concern Card usa un atributo que ningún stakeholder declara.
+Los nueve están reclamados. Se revisó carta por carta: ninguna Concern Card usa un atributo que
+no aparezca en alguna Stakeholder Card.
 
 ---
 

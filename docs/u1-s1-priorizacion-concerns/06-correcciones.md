@@ -91,8 +91,7 @@ Regla dada en clase:
 > stakeholder. Tiene que haber al menos uno que esté interesado, porque si no hay interesado
 > en lo que están haciendo, están haciendo algo que no deben hacer."
 
-Se comprueba automáticamente en [`scripts/decidarch/v1_validar.py`](../../scripts/decidarch/v1_validar.py):
-cada atributo que aparece en una opción debe estar declarado en al menos una Stakeholder Card.
+Cada atributo que aparece en una opción está declarado en al menos una Stakeholder Card:
 
 | Atributo | Le interesa a |
 |---|---|
@@ -137,28 +136,33 @@ y C-10 (animaciones), los dos últimos del ranking.
 
 ---
 
-## 6. Verificación
+## 6. Verificación del mazo
 
-`v1_validar.py` no deja generar el PDF si algo falla. Comprueba:
+Antes de imprimirlo se revisó que cumpliera estas condiciones:
 
-1. El mazo tiene el tamaño del set oficial
-2. Cada Concern Card tiene 3 opciones con símbolos válidos
-3. Ninguna opción carece de trade-offs, y ninguna domina a otra
-4. **Ningún atributo queda huérfano** (regla de clase)
-5. Todas las QA-Priority se imprimen en 0
-6. Cada Event Card solo modifica atributos que el stakeholder declara
-7. El mazo es ganable y perdible, con el scoring oficial
+1. El mazo tiene el tamaño del set oficial: 10 Concern Cards, 6 Event Cards, 3 opciones por concern
+2. Todos los impactos usan la notación oficial: `+`, `+ +`, `-`, `- -`
+3. **Ninguna opción carece de trade-offs.** Toda opción tiene al menos un impacto positivo y uno
+   negativo, como exige DecidArch
+4. **Ninguna opción domina a otra.** Si una fuera mejor o igual en los nueve atributos, elegir
+   sería trivial y la carta no obligaría a discutir
+5. **Ningún atributo queda huérfano**, según la regla dada en clase
+6. Cada Event Card solo modifica atributos que ese stakeholder declara en su carta
+7. El mazo se puede ganar y se puede perder con el scoring oficial
 
-Resultado con el mazo actual, simulando las 59.049 combinaciones posibles:
+Sobre el último punto: simulando las 59.049 combinaciones posibles de decisiones, gana el 8,8 %
+si no se roban eventos y el 0,2 % si se roban los seis. Las tres estrategias triviales pierden,
+cada una por un motivo distinto:
 
-```
-ganadoras sin eventos:    5200  ( 8,8 %)
-ganadoras con 6 eventos:   130  ( 0,2 %)
+| Estrategia | Resultado | Por qué |
+|---|---|---|
+| Elegir siempre la opción 1 | Pierde | El sistema queda sin arquitectura: Modifiability y Analysability se hunden |
+| Elegir siempre la opción 2 | Pierde | No alcanza a cubrir los atributos que los eventos vuelven críticos |
+| Elegir siempre la opción 3 | Pierde | Performance y Analysability caen bajo cero |
 
-todas 1  -> pierde   (sin arquitectura)
-todas 2  -> pierde
-todas 3  -> pierde   (sin rendimiento ni analizabilidad)
-```
+Que ninguna línea recta gane es lo que obliga a negociar entre los tres stakeholders, que es el
+objetivo del juego.
+
 
 ---
 
