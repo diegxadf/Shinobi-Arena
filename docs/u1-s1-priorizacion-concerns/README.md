@@ -18,21 +18,18 @@ La Semana 1 no pide código ni diagramas todavía: pide **identificar y prioriza
 | [`docs/04-priorizacion.md`](04-priorizacion.md) | Criterio de priorización, tabla de puntajes y ranking en 3 bloques |
 | [`docs/05-decisiones-y-eventos.md`](05-decisiones-y-eventos.md) | Decisión tomada en los 4 concerns del Bloque A + Event Cards del ramo |
 | [`PULL_REQUEST.md`](PULL_REQUEST.md) | Texto publicado en la descripción del PR |
-| [`DecidArena-Kit-Imprimible.pdf`](DecidArena-Kit-Imprimible.pdf) | **Versión jugable e imprimible** de esta entrega: 12 páginas A4 con cartas recortables, tablero y hojas de registro |
+| [`06-correcciones.md`](06-correcciones.md) | **Qué se corrigió** respecto de la primera versión y por qué |
+| [`ShinobiArena-DecidArch-Kit.pdf`](ShinobiArena-DecidArch-Kit.pdf) | **Mazo imprimible en formato DecidArch v1**: cartas, plantillas de registro y Scoring Sheet |
 
 ## Versión imprimible
 
-La misma priorización, convertida en un juego de mesa jugable siguiendo el formato del kit
-DecidArch: 3 Stakeholder Cards, 8 Concern Cards, 8 Event Cards, tablero de pistas de calidad
-y hojas de preparación, registro y puntuación.
+El mazo sigue el formato oficial de **DecidArch v1**: 1 Project Card, 3 Stakeholder Cards,
+10 Concern Cards con opciones 1/2/3 e impactos en símbolos, 6 Event Cards, las dos plantillas
+de registro y el Scoring Sheet con su fórmula real.
 
-Los 8 concerns del mazo son los 8 mejor puntuados de los 12 de
-[`04-priorizacion.md`](04-priorizacion.md), en ese mismo orden. Los 9 atributos de calidad se
-condensan en 5 pistas jugables (JUG, FIA, REN, EXT, ALC); cada carta indica qué condensa.
-
-El generador está en [`scripts/decidarena/`](../../scripts/decidarena/) e incluye un
-validador que comprueba que el juego sea ganable, perdible y sin estrategia dominante antes
-de producir el PDF.
+Los 10 concerns son los 10 mejor puntuados de los 12 de [`04-priorizacion.md`](04-priorizacion.md).
+El generador está en [`scripts/decidarch/`](../../scripts/decidarch/) e incluye un validador que
+comprueba, entre otras cosas, que ningún atributo de calidad quede sin un stakeholder interesado.
 
 ## Resultado en una tabla
 

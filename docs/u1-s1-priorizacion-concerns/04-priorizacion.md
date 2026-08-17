@@ -1,5 +1,11 @@
 # Priorización de Concerns
 
+
+> **Nota.** Este documento conserva el vocabulario de atributos de la primera versión.
+> El análisis y el orden de los concerns siguen vigentes; los nombres de los atributos
+> fueron corregidos en [`02-stakeholder-cards.md`](02-stakeholder-cards.md) y el motivo
+> está en [`06-correcciones.md`](06-correcciones.md).
+
 Este es el entregable central del PR. Priorizar no es ordenar por gusto: es responder **en qué orden hay que decidir**, con un criterio que otra persona pueda aplicar y obtener el mismo resultado.
 
 ---
