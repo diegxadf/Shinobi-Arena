@@ -1,5 +1,11 @@
 # Decisiones del Bloque A y Event Cards
 
+
+> **Nota.** Este documento conserva el vocabulario de atributos de la primera versión.
+> El análisis y el orden de los concerns siguen vigentes; los nombres de los atributos
+> fueron corregidos en [`02-stakeholder-cards.md`](02-stakeholder-cards.md) y el motivo
+> está en [`06-correcciones.md`](06-correcciones.md).
+
 ## Parte 1 — Decisiones tomadas
 
 Solo se deciden aquí los cuatro concerns del Bloque A, porque bloquean el trabajo de la Semana 2. Los Bloques B y C quedan abiertos a propósito: decidirlos ahora sería adivinar sin información.

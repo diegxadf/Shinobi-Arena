@@ -1,5 +1,11 @@
 # Concern Cards — Shinobi Arena
 
+
+> **Nota.** Este documento conserva el vocabulario de atributos de la primera versión.
+> El análisis y el orden de los concerns siguen vigentes; los nombres de los atributos
+> fueron corregidos en [`02-stakeholder-cards.md`](02-stakeholder-cards.md) y el motivo
+> está en [`06-correcciones.md`](06-correcciones.md).
+
 > Formato tomado de las *Concern Cards* de DecidArch: cada carta plantea una pregunta abierta del sistema, lista opciones numeradas y anota el impacto de cada opción sobre los atributos de calidad con `(+)`, `(++)`, `(-)`, `(--)`.
 
 **Abreviaturas de atributos** (ver [`02-stakeholder-cards.md`](02-stakeholder-cards.md)):
